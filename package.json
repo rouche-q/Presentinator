@@ -1,0 +1,23 @@
+{
+  "name": "presentinator",
+  "version": "1.0.0",
+  "description": "Because Portofolioinator sounds bad",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rouche-q/Presentinator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rouche-q/Presentinator/issues"
+  },
+  "homepage": "https://github.com/rouche-q/Presentinator#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
