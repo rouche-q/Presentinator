@@ -6,7 +6,7 @@ const help = (term) => {
     term.writeln('  help')
     term.writeln('  clear')
     term.writeln('  trapchat')
-    term.writeln('  whoami')
+    term.write('  whoami')
 }
 
 const clear = (term) => {

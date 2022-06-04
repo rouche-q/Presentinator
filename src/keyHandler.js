@@ -7,6 +7,7 @@ const pressEnter = (term, cmd, domEvent) => {
             cmd = cmd.trim()
             exec(term, cmd)
         }
+        term.write('\r\n')
         writePrompt(term)
         cmd = ''
     }
@@ -22,8 +23,6 @@ const pressBackspace = (term, cmd, domEvent) => {
     }
     return cmd
 }
-
-
 
 const keyHandler = (term) => {
     let cmd = ''

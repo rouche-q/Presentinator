@@ -17,7 +17,7 @@ const exec = (term, command) => {
             break
         default:
             term.writeln(`\r\n${command} is not a valid command.`)
-            term.writeln('Type "help" to see available commands.')
+            term.write('Type "help" to see available commands.')
     }
 }
 
