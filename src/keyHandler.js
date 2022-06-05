@@ -29,7 +29,7 @@ const keyHandler = (term) => {
     return ({key, domEvent}) => {
         let printable = (!domEvent.altKey && domEvent.keyCode != 13 && domEvent.keyCode != 8 && !domEvent.ctrlKey && !domEvent.metaKey)
         console.log(domEvent)
-        if(domEvent.keyCode === 9 || domEvent.keyCode == 37 || domEvent.keyCode == 38 || domEvent.keyCode == 39 || domEvent.keyCode == 40) {
+        if(domEvent.keyCode === 9 || domEvent.keyCode === 91 || (domEvent.keyCode >= 37 && domEvent.keyCode <= 40) || (domEvent.keyCode >= 112 && domEvent.keyCode <= 143)) {
             return;
           }
         cmd = pressEnter(term, cmd, domEvent)

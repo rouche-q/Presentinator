@@ -14,12 +14,12 @@ const clear = (term) => {
 }
 
 const trapchat = (term) => {
-    term.writeln('\r\nhttps://trapchat.com/')
+    term.write('\r\nhttps://trapchat.com/')
     window.open('https://www.trapchat.fr/', '_blank').focus();
 }
 
 const whoami = (term) => {
-    term.writeln('\r\nhttps://twitter.com/Kuuruje_')
+    term.write('\r\nhttps://twitter.com/Kuuruje_')
 }
 
 export {help, clear, trapchat, whoami}
