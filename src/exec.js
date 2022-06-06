@@ -1,5 +1,5 @@
 // import all commands from src/command.js
-import { help, clear, trapchat, whoami } from './command.js'
+import { help, clear, trapchat, whoami, sendmeether } from './command.js'
 
 const exec = (term, command) => {
     switch (command) {
@@ -14,6 +14,9 @@ const exec = (term, command) => {
             break
         case 'whoami':
             whoami(term)
+            break
+        case 'sendmeether':
+            sendmeether(term)
             break
         default:
             term.writeln(`\r\n${command} is not a valid command.`)
